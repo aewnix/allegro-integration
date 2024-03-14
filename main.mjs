@@ -44,7 +44,7 @@ async function fetchData() {
     try {
         const xmlData = await fetchXML(url);
         const items = await parseXML(xmlData);
-        console.log('Fetched and processed data:', items.length);
+        console.log('Fetched and processed data:', items);
         return items; // Return the processed data
     } catch (error) {
         console.error('Error:', error);
